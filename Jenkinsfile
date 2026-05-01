@@ -1,0 +1,32 @@
+pipeline{
+    ageny any
+    stages{
+        stage(Testing){
+            steps{
+              script{
+                sh """
+                  echo "Application is in testing phase"
+                """
+              }
+            }
+        }
+        stage(Build){
+            steps{
+                script{
+                    sh """
+                      echo "application is in building phase"
+                    """
+                }
+            }
+        }
+        stage(Deploy){
+            steps{
+                script{
+                    sh """
+                    echo "application is deployed
+                    """
+                }
+            }
+        }
+    }
+}
