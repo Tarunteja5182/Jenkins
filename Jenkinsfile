@@ -48,7 +48,7 @@ pipeline{
                 ok "Yes, we should."
                 submitter "${params.PERSON}"
                 parameters {
-                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hi to?')
                 }
             }
             steps{
