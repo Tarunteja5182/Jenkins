@@ -23,7 +23,7 @@ pipeline{
             steps{
                 script{
                     sh """
-                    echo "application is deployed
+                    echo "application is deployed"
                     """
                 }
             }
