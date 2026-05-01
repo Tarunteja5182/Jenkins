@@ -1,7 +1,7 @@
 pipeline{
     agent {
         node{
-            lable 'ROBOSHOP'
+            label 'ROBOSHOP'
         }
     }
     stages{
