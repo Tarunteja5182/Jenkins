@@ -32,7 +32,8 @@ pipeline{
                 }
             }
         }
-        post{
+    }
+            post{
             always{
                 echo "I will run everytime this pipeline runs"
             }
@@ -43,5 +44,4 @@ pipeline{
                echo "I run only for a failure pipeline"
             }
         }
-    }
 }
