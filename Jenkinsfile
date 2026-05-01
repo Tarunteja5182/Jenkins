@@ -32,5 +32,16 @@ pipeline{
                 }
             }
         }
+        post{
+            always{
+                echo "I will run everytime this pipeline runs"
+            }
+            success{
+               echo "I run only for a sucesfull pipeline"
+            }
+            failure{
+               echo "I run only for a failure pipeline"
+            }
+        }
     }
 }
