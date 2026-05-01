@@ -4,12 +4,16 @@ pipeline{
             label 'ROBOSHOP'
         }
     }
+    environment{
+        learning="devops"
+    }
     stages{
         stage(Testing){
             steps{
               script{
                 sh """
                   echo "Application is in testing phase"
+                  echo "I am learning ${learning}"
                 """
               }
             }
