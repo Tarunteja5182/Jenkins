@@ -10,7 +10,7 @@ pipeline{
               }
             }
         }
-        stage(Build){
+        stage(Building){
             steps{
                 script{
                     sh """
