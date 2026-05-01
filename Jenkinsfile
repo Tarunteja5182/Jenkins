@@ -1,5 +1,9 @@
 pipeline{
-    agent any
+    agent {
+        node{
+            lable 'ROBOSHOP'
+        }
+    }
     stages{
         stage(Testing){
             steps{
